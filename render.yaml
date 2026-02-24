@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: luca-call-ws
+    runtime: node
+    plan: free
+    repo: https://github.com/lucazeitindustries/luca-call-ws
+    branch: main
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: CANVAS_PUSH_TOKEN
+        value: eb54b70f2ad25a60dcbba80d038ecd1f7b1e6632fbeb44bb
